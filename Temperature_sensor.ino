@@ -48,4 +48,29 @@ void setup() {
   lcd.print("Sensor!");
 }
 
+void loop() {
+  // put your main code here, to run repeatedly:
+  humidity = HT.readHumidity();
+  tempC=HT.readTemperature();
+  tempF=HT.readTemperature(true);
+
+  lcd.setCursor(0,0);
+  lcd.print("Temp F= ");
+  lcd.print(tempF);
+  lcd.setCursor(0,1);
+  lcd.print("Humidity= ");
+  lcd.print(humidity);
+  lcd.print(" %");
+  delay(500);
+  lcd.clear();  
+
+  Serial.print("HUmidity: ");
+  Serial.print(humidity);
+  Serial.print("% Temperature ");
+  Serial.print(tempC);
+  Serial.print(" C ");
+  Serial.print(tempF);
+  Serial.print(" F ");
+  
+  }
 
