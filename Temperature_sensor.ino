@@ -7,3 +7,6 @@
 #define Type DHT11
 // ^ varible type DTH11 to store temperature data
 #include <LiquidCrystal_I2C.h>
+
+//size of lcd and which character on board to display
+LiquidCrystal_I2C lcd(0x27, 16, 2);
