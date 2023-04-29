@@ -20,6 +20,8 @@ float humidity;
 float tempC;
 float tempF;
 
-
+//units of mini seconds so 500 milisecond 
+int setTime = 500;
+int dt = 1000;
 
 
