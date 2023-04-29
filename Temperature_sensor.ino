@@ -14,6 +14,12 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 // sense pin variable 
 int sensePin = 2;
 
+//creating varible of type DHT and the parameters are  sensepin and tupe
+DHT HT (sensePin, Type);
+float humidity;
+float tempC;
+float tempF;
+
 
 
 
