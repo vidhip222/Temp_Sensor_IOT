@@ -1,5 +1,6 @@
 // we used Arduino Nano 33 BLE
 // written in Arduino
+// installed Arduino AVR Board and Arduino Mbed OS Nano Boards
 
 // we imported DHT and liquid crystal library
 #include "DHT.h"
