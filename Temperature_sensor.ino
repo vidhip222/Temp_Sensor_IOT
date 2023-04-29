@@ -64,7 +64,7 @@ void loop() {
   delay(500);
   lcd.clear();  
 
-  Serial.print("HUmidity: ");
+  Serial.print("Humidity: ");
   Serial.print(humidity);
   Serial.print("% Temperature ");
   Serial.print(tempC);
