@@ -25,3 +25,27 @@ int setTime = 500;
 int dt = 1000;
 
 
+void setup() {
+  // put your setup code here, to run once:
+
+  // starts the output 9600 is bandwidth
+  Serial.begin(9600);
+  //starts up temperature sensor
+  HT.begin();
+  //give some delay
+  delay(setTime);
+  //initiialzes lcd
+  lcd.init();
+  // clears screen
+  lcd.clear();
+  lcd.backlight();
+
+  // set the cursor in 3rd coloum 0 row
+  lcd.setCursor (3,0);
+  lcd.print("Temperature");
+
+  lcd.setCursor(0,1);
+  lcd.print("Sensor!");
+}
+
+
