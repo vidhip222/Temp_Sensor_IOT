@@ -10,3 +10,10 @@
 
 //size of lcd and which character on board to display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+// sense pin variable 
+int sensePin = 2;
+
+
+
+
